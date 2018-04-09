@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="1047.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="1047.0" fitWidth="619.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/vms2.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="move" minWidth="96.0" styleClass="font" stylesheets="@application.css" text="回合數:0" textFill="#74599e" />
+      <VBox AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="276.0">
+         <children>
+            <HBox>
+               <children>
+                  <ImageView fx:id="icon1" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move1" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_01.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="icon2" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move2" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_02.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="icon3" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move3" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_03.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="icon4" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move4" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_04.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="icon5" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move5" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_05.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="icon6" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move6" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_06.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="icon7" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move7" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_07.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="icon8" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move8" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_08.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="icon9" fitHeight="128.0" fitWidth="128.0" onMouseClicked="#move9" onMouseDragged="#moveover" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dance_09.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    <Button layoutX="277.0" layoutY="657.0" minWidth="57.0" mnemonicParsing="false" onAction="#start" opacity="0.0" prefHeight="54.0" prefWidth="57.0" text="開始" AnchorPane.leftAnchor="402.0" AnchorPane.topAnchor="712.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button layoutX="273.0" layoutY="646.0" minWidth="57.0" mnemonicParsing="false" onAction="#exit" opacity="0.0" prefHeight="54.0" prefWidth="57.0" text="退出" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="712.0" />
+      <Button layoutX="298.0" layoutY="730.0" minWidth="80.0" mnemonicParsing="false" onAction="#play" opacity="0.0" prefHeight="86.0" prefWidth="82.0" text="音樂開(關)" AnchorPane.leftAnchor="340.0" AnchorPane.topAnchor="800.0" />
+   </children>
+</AnchorPane>
